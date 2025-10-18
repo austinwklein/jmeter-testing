@@ -45,8 +45,9 @@ JMeter Version
 I ran into an issue immediately where the jmeter GUI was far too small to be usable. With some research I found this is a common issue for high density displays and there was a modification I had to make to the `./bin/jmeter` file. This file said to instead make those changes in a modular file at `./bin/setenv.sh` to keep it separate from the base config.
 
 ```shell setenv.sh
-
+JVM_ARGS="-Dsun.java2d.uiScale=2.5"
 ```
+![JMeter First Startup](screenshots/2025-10-18_15-33-31.png "JMeter First Startup (With display fix)")
 
 #### JMX File of JMeter Test Definition
 
