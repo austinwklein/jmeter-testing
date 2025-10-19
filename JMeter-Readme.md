@@ -56,16 +56,23 @@ JVM_ARGS="-Dsun.java2d.uiScale=2.5"
 *Test Plan*
 
 ![Thread Group - Testing with calculator API from www.dneonline.com](screenshots/2025-10-18_16-22-31.png)
-*Testing with calculator API from www.dneonline.com/calculator*
+*Testing with calculator API from www.dneonline.com/calculator*  
+As can be seen above, the number of users are set to 5 with the number of loops as 3. This means there are 15 http requests being made across 5 connections.
 
 ![HTTP Request Body](screenshots/2025-10-18_16-22-45.png)
-*HTTP Request Body*
+*HTTP Request Body*  
+In the request body, we are setting two integers to send to be summed by the /calculator API, 3 and 4. For the /calculator API to know what to do with these numbers, we will move on to the HTTP Request Headers (next screenshot).
 
 ![HTTP Request Headers](screenshots/2025-10-18_16-22-53.png)
 *HTTP Request Headers*
 
 ![Results Tree Output](screenshots/2025-10-18_16-23-48.png)
 *Results Tree Output*
+This is where we can see that the http return code of the 15 requests were successful. As can be seen in the screenshot, I highlighted the portion of interest that shows the API actually did something. 
+
+![Summary Report](screenshots/2025-10-18_17-13-49.png)
+*Summary Report*
+This is an output of the summary report tab I added to the test. The stats of the test can be viewed here and there are a few options to configure the output even further.
 
 ---
 
