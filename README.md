@@ -34,7 +34,7 @@ OS
 Java Dev Kit  
 : OpenJDK **21.0.8** 2025-07-15  
 
-JMeter Version
+JMeter Version  
 : 5.6.3  
 
 ---
