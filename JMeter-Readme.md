@@ -47,7 +47,10 @@ I ran into an issue immediately where the jmeter GUI was far too small to be usa
 ```shell setenv.sh
 JVM_ARGS="-Dsun.java2d.uiScale=2.5"
 ```
-![JMeter First Startup](screenshots/2025-10-18_15-33-31.png "JMeter First Startup (With display fix)")
+
+![JMeter First Startup](screenshots/2025-10-18_15-33-31.png)
+*JMeter First Startup (With display fix implemented)*
+
 
 #### JMX File of JMeter Test Definition
 
